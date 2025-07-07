@@ -46,3 +46,37 @@
 - When all else is good (no issues):  
   - 🔧 Try tuning **Epochs**, **Batch Size**, **Learning Rate**, and observe performance.
 
+
+
+
+## 🚧 Problem Faced
+
+While performing deep learning and medical image processing tasks, I encountered multiple platform-related limitations:
+
+### 🔹 GPU Access in Google Colab
+- Although Colab provides access to GPUs (e.g., NVIDIA T4), memory-intensive processing can lead to **CUDA out-of-memory errors** or **runtime disconnections** after the 2-hour session limit.
+
+### 🔹 Switching to Kaggle
+- Kaggle notebooks offer GPU support, but if **CUDA runs out of memory**, the corresponding cell is **automatically killed** without warning or traceback, making it hard to debug or resume the process.
+
+### 🔹 Using Local Resources
+- Running models locally provides full control and avoids runtime interruptions, but it **requires sufficient memory and disk space** to store large datasets (such as MRI, DICOM, or NIfTI files)
+
+---
+
+### ✅ Conclusion
+
+Each platform comes with trade-offs:
+
+- **Colab** is good for small to medium workloads.
+- **Kaggle** is reliable for structured competition environments but lacks graceful error handling.
+- **Local machines** require strong hardware, especially for large-scale datasets.
+
+
+
+
+
+
+
+
+
